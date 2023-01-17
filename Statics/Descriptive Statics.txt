@@ -1,0 +1,174 @@
+Descriptive statistics:-> is a branch of statistics that is used to summarize and describe the characteristics 
+of a dataset. It plays an important role in data exploration and can help identify patterns,outliers, 
+and anomalies in the data that can guide further analysis and modeling. The goal of descriptive statistics 
+is to provide a clear and concise summary of a dataset that allows us to understand the main features of the data. 
+Here are some examples of descriptive statistics methods:
+
+    1) Measures of central tendency: These methods are used to describe the center or "typical" value of a dataset. 
+    The most common measures of central tendency are the mean, median, and mode.
+        a) Mean: The mean is the sum of all the values in a dataset divided by the total number of values. 
+        It is also known as the arithmetic average.
+
+        b) Median: The median is the middle value in a dataset when the values are arranged in numerical order. 
+        It is not affected by outliers and skewness as much as the mean.
+
+        c) Mode: The mode is the value that appears most frequently in a dataset. A dataset can have one mode, 
+        more than one mode, or no mode at all.
+
+        #Mean is sensitive to the outliers, if the dataset has few extreme values, the mean can be distorted, 
+        while the median will be less affected. Mode, on the other hand, is not affected by the outliers, but 
+        it is not very useful when the dataset is continuous as it is only defined for discrete data.
+        In general, mean is a more stable measure of central tendency when the dataset is large and roughly symmetric, 
+        while median is a better measure of central tendency when the dataset is small or has outliers. 
+        Mode is the best measure of central tendency when the dataset is categorical.
+
+    2) Measures of spread: These methods are used to describe the variability or spread of a dataset. 
+    The most common measures of spread are the range, variance, and standard deviation.
+        a) Range: The range is the difference between the largest and smallest values in a dataset. 
+        It gives an idea of how spread out the values are, but it is affected by outliers.
+
+        b) Variance: The variance is a measure of the average of the squared differences from the mean. 
+        It is a way to measure the spread of a dataset, but it is affected by outliers and it is also sensitive 
+        to the units of measurement.
+
+        c) Standard deviation: The standard deviation is the square root of the variance. It is a more interpretable measure 
+        of spread than the variance, and it is also affected by outliers and it is also sensitive to the units of measurement.
+
+        d) Interquartile range (IQR): The IQR is the difference between the third quartile (Q3) and 
+        the first quartile (Q1) of a dataset. It is a robust measure of spread that is not affected by outliers.
+
+        e) Coefficient of variation: It is the ratio of the standard deviation to the mean, expressed as a percentage. 
+        It allows you to compare the spread of different datasets that are measured in different units or have different scales.
+
+        #Range, Variance and Standard deviation are sensitive to outliers while IQR is robust to outliers.In general, 
+        Range is a simple measure of spread that is easy to calculate, but it is affected by outliers. Variance and 
+        standard deviation are more powerful measures of spread that can provide additional information about the 
+        distribution of a dataset, but they are affected by outliers and unit of measurements. IQR is a robust measure 
+        of spread that is not affected by outliers and is useful for identifying outliers in a dataset.
+
+    3) Skewness: is a measure of the asymmetry of the probability distribution of a real-valued random variable about its mean. 
+    It tells us the degree and direction of the deviation of a probability distribution from a normal distribution. 
+    A normal distribution is symmetric, and its skewness is zero.
+
+        Skewness can take on any value, positive or negative. 
+        a) A positive skewness indicates that the tail on the right side of the probability distribution is longer or fatter, 
+        meaning the majority of values are on the left side of the distribution, and the mean is greater than the median. 
+        
+        b) A negative skewness indicates that the tail on the left side of the probability distribution is longer or fatter, 
+        meaning the majority of values are on the right side of the distribution, and the mean is less than the median.
+
+        c) A skewness value of 0 means that the data is symmetric and does not have a skewness. 
+        A skewness value greater than 0 means that the data has a positive skewness, and a skewness value 
+        less than 0 means that the data has a negative skewness.
+
+        #Skewness is an important measure of the shape of a distribution and it is also used in some statistical tests and models. 
+        For example, skewness can indicate whether a distribution is normal or not, which can affect the validity of certain 
+        statistical tests and models. If a dataset has a high skewness, it might be necessary to transform the data to make it 
+        more symmetric before applying certain statistical methods (generally log function is used for this case).
+        There are different ways to calculate skewness, but the most common one is Pearson's coefficient of skewness, 
+        which is defined as:
+        {Skewness = (3*(mean - median))/standard deviation}
+
+    4) Kurtosis: is a measure of the "tailedness" of the probability distribution of a real-valued random variable. 
+    It describes the relative peakedness or flatness of a distribution compared to a normal distribution. 
+    A normal distribution has a kurtosis of 3, and it is considered to be mesokurtic.
+        
+        Kurtosis can take on any value, positive or negative. A kurtosis greater than 3 (leptokurtic) indicates that 
+        the distribution has fatter tails and a higher peak than a normal distribution. This means that the probability 
+        of observing extreme values (outliers) is higher than in a normal distribution. On the other hand, a kurtosis 
+        less than 3 (platykurtic) indicates that the distribution has thinner tails and a lower peak than a normal 
+        distribution. This means that the probability of observing extreme values is lower than in a normal distribution.
+
+        There are different ways to calculate kurtosis, but the most common one is Pearson's coefficient of kurtosis, 
+        which is defined as:
+                Kurtosis = ( ( (n(n+1) * (sum of xi^4)) / (sum of xi^2)^2) ) - (3(n-1)^2 / (n-2)(n-3));
+                Where xi is the ith value in the dataset and n is the total number of observations.
+
+        A kurtosis of 3 means that the data has a normal distribution and does not have any kurtosis. 
+        A kurtosis value greater than 3 means that the data has a leptokurtic distribution, and a kurtosis value 
+        less than 3 means that the data has a platykurtic distribution.
+
+        Kurtosis is an important measure of the shape of a distribution and it is also used in some statistical tests 
+        and models. For example, kurtosis can indicate whether a distribution is leptokurtic, platykurtic or mesokurtic 
+        which can affect the validity of certain statistical tests and models. Just like skewness, if a dataset has a 
+        high kurtosis, it might be necessary to transform the data before applying certain statistical methods.
+
+
+
+    5) Percentiles: Percentiles are a way to divide a dataset into 100 equal parts and are used to identify the value 
+    below which a certain percent of the observations in a dataset fall. For example, the 25th percentile, also known 
+    as the first quartile (Q1), is the value below which 25% of the observations fall. Similarly, the 50th percentile, 
+    also known as the median, is the value below which 50% of the observations fall. The 75th percentile, also known 
+    as the third quartile (Q3), is the value below which 75% of the observations fall.
+
+        To calculate a percentile, you first need to arrange the values of the dataset in numerical order. Then, you 
+        can use the following formula to find the value that corresponds to a particular percentile:
+                Percentile = (p/100) * (n+1);
+            Where p is the percentile you want to calculate (e.g. 25 for the first quartile), and n is the number 
+            of observations in the dataset.
+        Once you have found the position of the percentile, you can use the value that corresponds to that position 
+        in the dataset. If the position is a whole number, you can use the value that is in that position. If the 
+        position is not a whole number, you can interpolate between the two closest values.
+        Percentiles are also used in some statistical methods, like the five-number summary, box plot and also in 
+        some machine learning models like linear and logistic regression.
+
+
+    6) Box plot: A box plot, also known as a box-and-whisker plot, is a standardized way of displaying the distribution 
+    of a dataset based on five number summary. The five number summary consists of the following values:
+
+        a) Minimum: The smallest value in the dataset. or Lower fence =(Q1 - IQR)
+        b) First quartile (Q1): The value below which 25% of the observations fall. This is also known as the 25th percentile.
+        c) Median: The value below which 50% of the observations fall. This is also known as the 50th percentile.
+        d) Third quartile (Q3): The value below which 75% of the observations fall. This is also known as the 75th percentile.
+        e) Maximum: The largest value in the dataset. or Upper fence = (Q3 + IQR)
+        # Inter Quartile Range  (IQR)= Q1-Q3
+        
+        To create a box plot, these five values are plotted on a number line. The first and third quartile values are used to 
+        create a box, which represents the middle 50% of the data. The median is represented by a line that divides the box 
+        in half. The minimum and maximum are represented by "whiskers" that extend from the box to the smallest and largest 
+        observations. Any observations that fall outside of the minimum and maximum are considered outliers and are plotted 
+        separately.
+
+        The box plot is a useful tool for understanding the distribution of a dataset because it provides a clear visual 
+        representation of the center, spread, and skewness of the data. It is also useful for comparing the distribution 
+        of multiple datasets.
+
+        Boxplots are useful in identifying the outliers, skewness and also comparing the distributions of different groups 
+        or categories. They are also useful in identifying the underlying distribution of the data. Boxplots are easy to 
+        create and interpret and can be a good starting point for further data analysis.
+
+
+    7) Histogram:  is a graphical representation of the distribution of a dataset, showing the frequency of each value. It is 
+    similar to a bar chart, but instead of plotting individual values, it plots ranges of values, called bins, and the 
+    number of observations that fall within each bin.
+
+        To create a histogram, you first need to decide on the number of bins and the range of values that will be covered. 
+        Then, you can group the values in the dataset into the appropriate bins, and use the frequency of each bin to create 
+        a bar chart. The height of each bar represents the number of observations that fall within the corresponding bin.
+        A histogram provides a visual representation of the distribution of a dataset, showing the frequency of each value. 
+        It is useful for understanding the shape of a dataset and identifying patterns, such as the presence of outliers, 
+        skewness, or multimodality. It also helps to identify the underlying probability distribution of the dataset.
+        Histograms are particularly useful for continuous data, where it can be difficult to see patterns or understand the 
+        distribution of the data just by looking at a list of numbers. With histograms, you can see the overall shape of the 
+        distribution and identify any patterns or anomalies in the data.
+        In addition to this, histograms are also useful in identifying the underlying probability distribution of the data. 
+        Based on the shape of the histogram, one can identify whether the data follows normal distribution, exponential 
+        distribution, poisson distribution and many more.
+        It's also worth noting that histograms can be created using different types of binning techniques like equal width 
+        binning, equal frequency binning and adaptive binning, each with its own advantages and disadvantages.
+
+    8) Frequency Distribution Table: It is a tabular representation showing the number of observations 
+    for each unique value in the data set.
+
+            It is used to summarize and organize data in a way that makes it easy to understand the distribution of the values.
+            To create a frequency distribution table, you first need to list all of the unique values in the dataset, along 
+            with the number of times each value appears. This is called the frequency of the value. The table will typically 
+            have two columns: one for the unique values and one for their corresponding frequencies.
+            A frequency distribution table can help to identify patterns, outliers, and anomalies in the data, as well as the 
+            underlying probability distribution of the data. It also provides a quick and easy way to calculate the relative 
+            frequency, cumulative frequency and also the percentage of each unique value.
+            It is also useful in identifying the most common values and the least common values in the dataset. In addition to 
+            this, it also helps to identify the mode of the dataset.
+            Frequency distribution tables are often used in descriptive statistics to summarize and organize data. They are 
+            useful for both categorical and numerical data and can be used to identify patterns, outliers, and anomalies in the 
+            data, as well as the underlying probability distribution of the data.
