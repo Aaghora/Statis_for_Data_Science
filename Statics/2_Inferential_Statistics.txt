@@ -1,0 +1,140 @@
+Inferential statistics is a branch of statistics that is used to make predictions or inferences about a population based on 
+a sample of data. The goal of inferential statistics is to use a sample of data to make generalizations about a population.
+It involves using statistical methods to make estimates and predictions about a population based on a sample of data.
+
+Inferential statistics make use of probability theory and statistical models to make predictions about the population. 
+It allows us to draw conclusions about a population from a sample, which can be used to make decisions or predictions.
+
+    Some examples of inferential statistical methods include:
+    1) Estimation: Estimation is the process of using a sample of data to estimate a population parameter. It is a 
+    fundamental concept in inferential statistics that allows us to make predictions or inferences about a population 
+    based on a sample of data.
+
+    There are two main types of estimation: point estimation and interval estimation.
+        a) Point estimation: This is the process of finding a single value that is used to estimate a population parameter. 
+        For example, finding the sample mean as an estimate for the population mean. The most commonly used point estimates 
+        are sample mean, mode, and median.
+            
+
+
+        b) Interval estimation: This is the process of finding a range of values that are likely to contain the population 
+        parameter. For example, finding a range of values that are likely to contain the population mean. The most commonly 
+        used interval estimates are the Confidence Interval (CI) and the Prediction Interval (PI).
+
+        When estimating population parameters, it is important to consider the sampling error and also the potential biases 
+        in the sampling process. The accuracy of an estimate depends on the sample size and the variability of the data. 
+        Generally, as the sample size increases, the sampling error decreases, and the estimate becomes more accurate.
+            The most commonly used interval estimates are the Confidence Interval (CI) and the Prediction Interval (PI).
+            i) Confidence Interval (CI): A confidence interval (CI) is a range of values that is likely to contain the true 
+            population parameter with a certain level of confidence. It is defined by a lower and upper limit, and the level of 
+            confidence is represented as a percentage (e.g. 95% CI).
+            For example, a 95% CI for the population mean would be a range of values within which we can be 95% confident that 
+            the true population mean falls. The lower and upper bounds of the interval are calculated using the sample mean, 
+            standard deviation and sample size.
+
+            ii) Prediction Interval (PI): A prediction interval (PI) is a range of values that is likely to contain the value of 
+            a future observation from the same population with a certain level of confidence. It is wider than a confidence 
+            interval because it also accounts for the additional uncertainty of predicting a future observation.
+            For example, a 95% PI for a future observation would be a range of values within which we can be 95% confident 
+            that a future observation would fall. The lower and upper bounds of the interval are calculated using the sample 
+            mean, sample standard deviation, sample
+
+    
+
+    2) Hypothesis testing: Hypothesis testing is a statistical method used to test a claim or hypothesis about a population 
+    parameter. It is a fundamental concept in inferential statistics that allows us to use a sample of data to make inferences 
+    about a population.
+    The basic idea behind hypothesis testing is to compare the sample data to a model or a theoretical distribution, and to 
+    decide whether the sample data is consistent with that model or distribution. If the sample data is consistent with the 
+    model, we fail to reject the null hypothesis. If the sample data is not consistent with the model, we reject the 
+    null hypothesis in favor of an alternative hypothesis.
+
+        The steps involved in hypothesis testing are:
+            1) State the null hypothesis (H0) and the alternative hypothesis (Ha)
+            2) Choose a significance level (alpha)
+            3) Collect the sample data
+            4) Compute a test statistic
+            5) Compare the test statistic to the critical value(s)
+            6) Make a decision about the null hypothesis
+            7) Draw a conclusion
+        #The null hypothesis (H0) represents a statement of no effect or no difference and usually represents the status quo. 
+        The alternative hypothesis (Ha) represents the statement we want to test. The significance level (alpha) is the 
+        probability of rejecting the null hypothesis when it is true.
+        The most common test statistic is the p-value, which is the probability of obtaining a test statistic as extreme or 
+        more extreme than the one computed from the sample, assuming the null hypothesis is true. If the p-value is less than 
+        the significance level, we reject the null hypothesis.
+        The conclusion of a hypothesis test is usually a statement of whether we reject or fail to reject the null hypothesis. 
+        It is important to note that a failure to reject the null hypothesis does not mean that the null hypothesis is true, 
+        it only means that there is not enough evidence to suggest that the null hypothesis is false.
+
+
+
+    3) Correlation and regression analysis: Correlation and regression analysis are statistical methods used to examine the 
+    relationship between two or more variables. They are used to determine if there is a relationship between two variables, 
+    and if so, the strength and direction of that relationship.
+
+        Correlation analysis is a statistical technique that is used to measure the strength and direction of the relationship between 
+        two variables. It can be used to measure the relationship between two continuous variables, two categorical variables, or one 
+        continuous and one categorical variable. The most common measure of correlation is Pearson's correlation coefficient (r), 
+        which ranges from -1 to 1. A value of 1 indicates a perfect positive correlation, a value of -1 indicates a perfect negative 
+        correlation, and a value of 0 indicates no correlation.
+
+        Regression analysis is a statistical technique that is used to model the relationship between a dependent variable and one or 
+        more independent variables. It is used to estimate the relationship between the variables, and to predict the value of the 
+        dependent variable based on the values of the independent variables.
+
+        There are different types of regression analysis such as linear regression, logistic regression, poisson regression and many 
+        more. Linear regression is the most common type of regression analysis, and it is used to model the relationship between a 
+        continuous dependent variable and one or more independent variables. It assumes a linear relationship between the variables 
+        and estimates the coefficients of the independent variables that best predict the dependent variable.
+
+        Both correlation and regression are useful in identifying the relationship between variables, but correlation is used to 
+        identify the strength and direction of relationship between two variables, while regression is used to identify the 
+        relationship between one dependent variable and one or more independent variables.
+
+        In data science and machine learning, correlation and regression analysis are used to identify the relationship between 
+        different variables and also in feature selection and feature engineering
+
+    4) ANOVA: ANOVA (Analysis of Variance) is a statistical method used to test whether the means of two or more groups are equal. 
+    It is used to determine whether there is a significant difference between the means of two or more groups.
+            There are two types of ANOVA:
+
+            a) One-way ANOVA: This is used to compare the means of two or more independent groups. For example, comparing the mean 
+            test scores of students in three different schools.
+
+            b) Two-way ANOVA: This is used to compare the means of two or more groups, where the groups are divided into two or more 
+            subgroups. For example, comparing the mean test scores of students in three different schools, where each school is 
+            further divided into two or more subgroups based on gender.
+
+        The basic idea behind ANOVA is to compare the variation between the group means to the variation within the groups. 
+        The null hypothesis in ANOVA is that there is no difference between the group means. The alternative hypothesis is 
+        that there is a difference between at least two of the group means.
+        
+        To test the hypotheses, an F-test is used. The F-test compares the ratio of the variation between the group means 
+        to the variation within the groups. If the ratio is large, it suggests that the means are significantly different 
+        and the null hypothesis is rejected.
+        #ANOVA is a powerful statistical tool, and it's often used in many fields such as medical research, social sciences, 
+        psychology, and many more. ANOVA is also a basis for more advanced techniques such as multiple comparisons and mixed-design ANOVA.
+
+
+    5) Chi-square test: The chi-square test is a statistical method used to determine whether there is a significant association between 
+    two categorical variables. It is used to test the independence of two categorical variables and to determine if the observed frequencies 
+    of the variables deviate from the expected frequencies under the assumption of independence.
+    The chi-square test is based on a chi-square statistic, which is calculated by comparing the observed frequencies of the variables to 
+    the expected frequencies under the assumption of independence. The chi-square statistic follows a chi-square distribution, and the 
+    p-value is calculated based on the chi-square distribution.
+        There are two types of chi-square tests:
+        a) Goodness of fit test: This is used to determine if the observed frequencies of a single variable fit a specific distribution.
+
+        b) Test of independence: This is used to determine if two categorical variables are independent. It compares the observed 
+        frequencies of the variables to the expected frequencies under the assumption of independence.
+
+    The null hypothesis in a chi-square test is that the two categorical variables are independent. The alternative hypothesis is that 
+    the two categorical variables are dependent. If the p-value is less than the significance level (alpha), we reject the null hypothesis 
+    and conclude that there is a significant association between the two variables.
+
+    #The chi-square test is a powerful tool for analyzing categorical data and it is widely used in fields such as medical research, 
+    social sciences, psychology, and many more. It's also worth noting that chi-square test has assumptions such as random sampling, 
+    large sample size, and independence of observations.
+
+
