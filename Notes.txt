@@ -1,0 +1,19 @@
+1) Descriptive statistics: These methods are used to summarize and describe the characteristics of a dataset. Examples include measures of central tendency (mean, median, mode) and measures of spread (range, variance, standard deviation).
+
+2) Inferential statistics: These methods are used to make predictions or draw conclusions from data. Examples include hypothesis testing and estimation.
+
+3) Linear regression: This method is used to model the relationship between a dependent variable and one or more independent variables. It is commonly used in predictive modeling.
+
+4) Logistic regression: This method is used to model the relationship between a binary dependent variable and one or more independent variables. It is commonly used in classification tasks.
+
+5) Decision Trees: This method is a type of supervised learning algorithm that can be used for both classification and regression tasks. It builds a tree-like model of decisions and their possible consequences.
+
+6) Clustering: This method is used to group similar observations together. The most common type of clustering is k-means clustering, which involves dividing a dataset into k clusters based on similarity.
+
+7) Time series analysis: This method is used to understand and make predictions about data that varies over time. Techniques include moving averages, exponential smoothing, and ARIMA modeling.
+
+8) Bayesian statistics: This method is a type of statistical inference that is based on Bayes' theorem, which is used to update the probability of an event based on new information.
+
+9) Monte Carlo methods: These methods use random sampling to solve mathematical problems. They are often used in simulations and optimization.
+
+10) Survival analysis: This method is used to analyze time-to-event data, such as time until failure or time until a particular event occurs.
